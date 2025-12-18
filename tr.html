@@ -46,12 +46,26 @@
       position: relative;
     }
 
-    .logo {
+    .logo-container {
       width: 100px;
       height: 100px;
-      margin-bottom: 24px;
-      border-radius: 20px;
-      box-shadow: 0 0 20px rgba(255, 140, 0, 0.2);
+      margin: 0 auto 24px;
+      background-color: #1a1a1a;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 30px rgba(255, 140, 0, 0.15);
+      border: 2px solid #222;
+    }
+
+    .logo-c {
+      color: #ffb13b;
+      font-size: 70px;
+      font-weight: 700;
+      font-family: 'Rubik', sans-serif;
+      line-height: 1;
+      margin-top: -4px; /* Centering tweak for the letter */
     }
 
     h1 {
@@ -122,7 +136,9 @@
 <body>
 
   <div class="container">
-    <img src="https://taxiaeropuerto.com/assets/casibom-logo.png" alt="Casibom Logo" class="logo">
+    <div class="logo-container">
+      <span class="logo-c">C</span>
+    </div>
     
     <h1>Güvenli Yönlendirme</h1>
     <p>Resmi ve güncel Casibom adresine aktarılıyorsunuz. Lütfen bekleyin...</p>
@@ -145,3 +161,6 @@
 
 </body>
 </html>
+
+
+
