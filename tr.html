@@ -1,1 +1,163 @@
-test
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casibom Giriş Yapılıyor...</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0c0c0c;
+      --orange: #ff8c00;
+      --orange-hover: #ffad42;
+      --black-card: #141414;
+      --text: #ffffff;
+      --muted: #a0a0a0;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Rubik', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+
+    .container {
+      text-align: center;
+      background: var(--black-card);
+      padding: 40px;
+      border-radius: 24px;
+      border: 1px solid #222;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+      max-width: 400px;
+      width: 90%;
+      position: relative;
+    }
+
+    .logo {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 24px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(255, 140, 0, 0.2);
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 8px;
+    }
+
+    p {
+      color: var(--muted);
+      margin-bottom: 30px;
+      font-size: 0.95rem;
+    }
+
+    .btn-group {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .btn {
+      padding: 16px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .btn-primary {
+      background: var(--orange);
+      color: #000;
+    }
+
+    .btn-primary:hover {
+      background: var(--orange-hover);
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(255, 140, 0, 0.3);
+    }
+
+    .btn-telegram {
+      background: #229ED9;
+      color: white;
+    }
+
+    .btn-telegram:hover {
+      background: #28a9e6;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(34, 158, 217, 0.3);
+    }
+
+    .loader {
+      width: 40px;
+      height: 40px;
+      border: 3px solid #222;
+      border-top: 3px solid var(--orange);
+      border-radius: 50%;
+      margin: 20px auto 0;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .footer-text {
+      margin-top: 30px;
+      font-size: 0.8rem;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="/favicons/favicon-180.png" alt="Casibom Logo" class="logo">
+    
+    <h1>Güvenli Yönlendirme</h1>
+    <p>Resmi ve güncel Casibom adresine aktarılıyorsunuz. Lütfen bekleyin...</p>
+
+    <div class="btn-group">
+      <a href="{{Casibom_GIRIS}}" class="btn btn-primary">
+        GÜNCEL ADRESE GİT
+      </a>
+      <a href="https://t.me/casibomresmi" target="_blank" class="btn btn-telegram">
+        TELEGRAM KANALINA KATIL
+      </a>
+    </div>
+
+    <div class="loader"></div>
+
+    <div class="footer-text">
+      © 2026 Casibom Resmi Yönlendirme Servisi
+    </div>
+  </div>
+
+  <script>
+    // Opsiyonel: 5 saniye sonra otomatik yönlendirme
+    // setTimeout(() => {
+    //   window.location.href = "{{Casibom_GIRIS}}";
+    // }, 5000);
+  </script>
+</body>
+</html>
+
