@@ -1,0 +1,28 @@
+{
+  "name": "Casibom - Casibom Giriş | Casibom Telegram | Casibom Twitter",
+  "short_name": "Casibom",
+  "description": "Casibom giriş, Casibom telegram ve Casibom twitter bilgileri",
+  "icons": [
+    {
+      "src": "/favicon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "theme_color": "#FF6B35",
+  "background_color": "#1a1a1a",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/"
+}
+
